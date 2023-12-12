@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)/changelog.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="theme-color" content="#505050" />
+        <title>Plugin: Gleisbelegung</title>
+        <link
+            href="./changelog_files/style.css"
+            type="text/css"
+            rel="stylesheet"
+        />
+        <script src="chrome-extension://jbkfoedolllekgbhcbcoahefnbanhhlh/content/fido2/page-script.js"></script>
+    </head>
+
+    <body id="website">
+        <div id="header">
+            <div class="center">
+                <a href="/index.html">Home</a>
+                <a href="/github.html">Github</a>
+                <a href="/changelog.html">Changelogs</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="text_align_center">Changelogs</h1>
+
+            <h2>Changelog (Version: 1.6):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - BETA: Stellwerksübersicht (grafische Darstellung der
+                Zugpositionen zwischen Bahnhöfen)<br />
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">- Keine <br /></p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Stellwerksübersicht: Zugnamen befinden sich je nach winkel ein
+                gutes Stück von der Linie entfernt<br />
+                - Stellwerksübersicht: Ein und Ausfahrten in das Stellwerk
+                werden nicht erkannt und dargestellt<br />
+                - Stellwerksübersicht: Alternativer Bahnhofsname wird nicht
+                übernommen<br />
+                - Stellwerksübersicht: Die Fahrtrichtung eines Zuges ist nicht
+                sofort offensichtlich<br />
+                - Allgemein: Der alternative Bahnhofsname wird nicht
+                gespeichert<br />
+            </p>
+
+            <h2>Changelog (Version: 1.5):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Erkennung und Anzeige von Bahnhöfen<br />
+                - Einstellungsfenster kann nun gesamte Bahnhöfe
+                ein/ausblenden<br />
+                - Es können gesamte Bahnhöfe verschoben werden<br />
+                - Bahnhöfe können umbenannt werden, da man mit einigen
+                Bahnhofsnamen nichts anfangen kann<br />
+                - Fenster mit Hinweisen, wenn keine Verbindung mit dem STS
+                hergestellt werden kann<br />
+                - Zugnummeränderung: Nachfolgezug zeichnen und in Suche
+                anzeigen<br />
+                - BETA (Fehler wahrscheinlich): Es werden nun
+                Stellwerksspezifische Daten gespeichert und geladen.
+                (Speicherort: "C:\Users\DEIN_BENUTZERNAME\Documents\Plugin
+                Gleisbelegung")
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Absturz nach 45 Minuten behoben (erneut)<br />
+                - Änderung der Schriftgröße wirkt sich nun auf alle Text aus,
+                und nicht nur in den Tabellen<br />
+                - Die Zeitspalte wird nicht wie die Tabelle alle zwei Minuten
+                unterschiedlich markiert.<br />
+                - Reihenfolge ändern: Neben den Bahnsteigsnamen wird nun eine
+                Zahl angezeigt, die die Sortierung vereinfacht.<br />
+                - Die Zeitspalte bleibt synchron mit der restlichen Tabelle<br />
+                - Züge die das Stellwerk verlassen haben, werden nun aus der
+                Zugliste entfernt<br />
+                - weitere diverse Fehlerkorekturen.
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">- Nichts bekannt<br /></p>
+
+            <h2>Changelog (Version: 1.4):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">- Keine<br /></p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Absturz behoben<br />
+                - Absturz nach 45 Minuten behoben
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Zugnummeränderung: Nachfolgezug zeichnen<br />
+            </p>
+
+            <h2>Changelog (Version: 1.3):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">- Keine<br /></p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Log: Verbindung:212 NullPointerException<br />
+                - Log: XMLHandler:144 NullPointerException<br />
+                - Log: XMLHandler:55 NullPointerException<br />
+                - Log: LabelContainer:93 IndexOutOfBoundsException<br />
+                - Log: Fenster:771 NullPointerException<br />
+                - Log: XMLHandler:89 NullPointerException<br />
+                - Log: Fenster:304 IndexOutOfBoundsException<br />
+                - Log: Verbindung:119 NumberFormatException<br />
+                - Benutzerdefinierte sortierte Gleise werde nicht korreckt
+                ausgeblendet<br />
+                - Es können nun wieder Sounds bei Doppelbelegungen abgespielt
+                werden (vorher nicht möglich, aufgrund der Android-Version)
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Verbindung: Array out of Bounds<br />
+                - Zugnummeränderung: Nachfolgezug zeichnen<br />
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">- Weiterhin Fehler beheben<br /></p>
+            <br />
+
+            <h2>Changelog (Version: 1.2):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Benutzerdefinierte Gleisreihenfolge (mit Rechtsklick auf
+                Gleisnamen aufrufbar)<br />
+                - Fehlermeldung, wenn Verbindung nicht zustande kommt (weil z.B.
+                die Plugin-Schnittstelle nicht gestartet wurde)<br />
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Log: Verbindung:293 NullPointerException<br />
+                - Log: Fenster:756 NullPointerException<br />
+                - Log: Fenster:456 NullPointerException<br />
+                - Log: LabelContainer:93 ArrayIndexOutOfBoundsExceptionn<br />
+                - Log: Fenster:763 NullPointerException<br />
+                - Erste Log-Zeile wurde doppelt hochgeladen<br />
+                - Ausgebelndete Gleise konnten nach "Update" wieder
+                erscheinen<br />
+                - Große Log's wurden nicht vollständig hochgeladen
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Android: Die Tastatur hat merkwürdige Eigenschaften<br />
+                - Android: Das Einstellungsfenster lässt sich äußerst schwer
+                bedienen.<br />
+                - Log: Fenster:297 IndexOutOfBoundsException (warten auf weitere
+                Details aus neuer Version)<br />
+                - Log: Verbindung:119 NumberFormatException (warten auf weitere
+                Details aus neuer Version)<br />
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Android: Verhalten des Einstellungsfensters verbessern.<br />
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 1.1):</h2>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Fehler werden nun nicht mehr gekürtzt hochgeladen<br />
+            </p>
+
+            <h2>Changelog (Version: 1.0):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Einzelne Gleise können nun hervorgehoben werden<br />
+                - Sollten während einer Sitzung Fehler auftreten, wirst du
+                darauf hingewiesen, dass die Log-Datei automatisch hochgeladen
+                werden kann. (Wenn du das nicht willst, kannst du den organg
+                abbrechen)<br />
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Keine (Vorarbeit für benutzerdefinierte Gleisreihenfolge)<br />
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Android: Die Tastatur hat merkwürdige Eigenschaften<br />
+                - Android: Das Einstellungsfenster lässt sich äußerst schwer
+                bedienen.<br />
+                - Manchmal werden Züge vorzeitig aus der Tabelle entfernt (Grund
+                wohl nicht durch Plugin verursacht).<br />
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Android: Verhalten des Einstellungsfensters verbessern.<br />
+                - Der Benutzer soll die Reihenfolge der Gleise selbst bestimmen
+                können.<br />
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 0.9):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - 1. Android-Version verfügbar (Dies ist ein Nebenprodukt, nicht
+                alle Funktionen enthalten)<br />
+                - Sollte das Plugin nicht auf dem SIM-Rechner starten (Handy
+                bzw. anderer Rechner im Netzwerk) dann sollte die IP-Adresse im
+                Normalfall selbstständig gefunden werden<br />
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Das Plugin sollte nun deutlich seltener Abstürzen<br />
+                - Fehler werden nun in eine Log-Datei geschrieben. (Speicherort:
+                C:\Users\BENUTZERNAME\AppData\Local\Temp alternativ auch WIN+R
+                und dann %temp%. Dort dann nach Plugin_Gleisbelegung_Log.txt
+                suchen)<br />
+                - Der Neustart-Button sollte nun deutlich zuverlässiger
+                Arbeiten<br />
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Android: Die Tastatur hat merkwürdige Eigenschaften<br />
+                - Android: Das Einstellungsfenster lässt sich äußerst schwer
+                bedienen.<br />
+                - Manchmal werden Züge vorzeitig aus der Tabelle entfernt (Grund
+                noch unbekannt).<br />
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Android: Verhalten des Einstellungsfensters verbessern.<br />
+                - Durch einen Rechtsklick über einem Gleisnamen im Tabellenkopf
+                soll das entsprechende Gleis farbig merkiert werden, um an
+                irgendetwas wichtiges zu denken (z.B.: bei Gleissperrung).<br />
+                - Der Benutzer soll die Reihenfolge der Gleise selbst bestimmen
+                können.<br />
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 0.8):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Durchfahrten werden bei den Zuginformationen mit einem Df.
+                (für DurchFahrt) kenntlich gemacht. Außerdem werden sie in der
+                Tabelle kursiv geschrieben.<br />
+                - Das Informationsfenster auf der rechten Seite kann über die
+                Einstellungen in seiner größe variieren.<br />
+                - Das Plugin kann nun nach Bedarf durch den Benutzer
+                "Neugestartet" werden (d.h. alle Zugdaten werden aktualisiert
+                und die Tabelle neu gezeichnet).<br />
+                - Der Folgezug eines Zuges wird nun in der Informationsansicht
+                angezeigt.<br />
+                - Der Übersichtlichkeit halber wurde eine unterschiedlich
+                gefärbte Linien alle 5, 15 und 60 Minuten eingeführt.<br />
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Züge, welche zu früh an einem Bahnhof ankommen, fahren nun
+                nicht mehr zu früh ab. Durchfahrten können den Bahnhof auch zu
+                früh verlassen.<br />
+                - Nachdem ein Zug mit der Suchfunktion identifiziert wurde,
+                bleibt der Text 2 Sekunden lang nicht markiert, falls man den
+                Text blind eintippt und nicht merkt, dass ein Zug gefunden
+                wurde.<br />
+                - Es wurden mehrere Fehler behoben, die das Plugin bei einem
+                automatischen "Neustart" abstürzen lassen konnten.<br />
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Manchmal werden Züge vorzeitig aus der Tabelle entfernt (Grund
+                noch unbekannt).<br />
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Durch einen Rechtsklick über einem Gleisnamen im Tabellenkopf
+                soll das entsprechende Gleis farbig merkiert werden, um an
+                irgendetwas wichtiges zu denken (z.B.: bei Gleissperrung).<br />
+                - Der Benutzer soll die Reihenfolge der Gleise selbst bestimmen
+                können.<br />
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 0.7):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">- Nichts neues, nur Bugfixes</p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Es sollten weniger Fehler entstehen<br />
+                - Entstehen dennoch einige Fehler, startet das Plugin neu um
+                eine Fehlfunktion zu vermeiden. <br />
+                - Der Neustart wird dir durch eine Meldung mitgeteilt
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">- Keine</p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Wenn man einen Zug sucht, und mehrere Ergebnisse vorhanden
+                sind, soll man sich durch die Ergebnisse wählen können.<br />
+                - Kleine Statistik<br />
+                - Weitere Ideen von euch höre ich gerne.
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 0.5):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">- Nichts neues, nur Bugfixes</p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Zugsuche verbessert<br />
+                - Flügel- und Kuppelvorgänge werden nun erkannt<br />
+                - Diverse Fehlerbehebungen (darunter: NumberFormatException,
+                NullPointerException)<br />
+                - Der Ton bei mehrfachbelegungen wird nun nur noch abgespielt,
+                wenn das Gleis auf sichtbar gesetzt ist
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">- Keine</p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Wenn man einen Zug sucht, und mehrere Ergebnisse vorhanden
+                sind, soll man sich durch die Ergebnisse wählen können.<br />
+                - Weitere Ideen von euch höre ich gerne.
+            </p>
+            <br />
+
+            <h2>Changelog (Version: 0.4):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Zugsuche<br />
+                - Einstellung zum Debuggen<br />
+                - Möglichkeit zum An- /Abwählen aller Gleise<br />
+                - ScrollBar im Einstellungsmenü hinzugefügt
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Flügel- und Kuppelvorgänge werden nicht erkannt =&gt; Auslöser
+                für Überschneidungen<br />
+                - Vereinzelt können haufenweise Überschneidungen auftreten =&gt;
+                Bitte Forenbeitrag beachten!
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - Tabellenzeilen haben untershiedliche Farben bekommen, um
+                besser z sehen in welcher zeile man sich befindet.
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">- Aktuell keine</p>
+            <br />
+
+            <h2>Changelog (Version: 0.3):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - Sound zur Benachrichtigung bei Überschneidungen<br />
+                - Weiter Zugdetails sind einsehbar<br />
+                - Meldungen, wenn es bei der Darstellung von Zügen zu Fehlern
+                kommt
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Flügel- und Kuppelvorgänge werden nicht erkannt =&gt; Auslöser
+                für Überschneidungen
+            </p>
+            <h3 class="question">Verbesserungen:</h3>
+            <p class="questions_answer">
+                - starke Performaceverbesserung (vorher wurde die Tabelle bei
+                jeder Aktualisierung neu erstellt, jetzt nur nuch alle 60
+                Minuten) <br />
+                - Züge mit Namensänderung werden nach meinen Tests durchgehend
+                erkannt, und nicht mehr fehlerhaft dargestellt.<br />
+                - Züge deren Verspätung und deren planmäßiger Halt größer als 3
+                Minuten ist, "halten" nun nur noch drei Minuten
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">- Aktuell keine</p>
+            <br />
+
+            <h2>Changelog (Version: 0.2):</h2>
+            <h3 class="question">Neu:</h3>
+            <p class="questions_answer">
+                - einige Einstellungen,<br />
+                - Möglichkeit, nur bestimmte Gleise anzeigen zu lassen,<br />
+                - Züge die ihren Namen ändern (E-Flag) werden angezeigt.
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Bei einigen Namensänderungen kann es vorkommen, dass in der
+                letzten Zeile der Vorgänger und der Nachfolger angezeigt werden.
+                (Gewollt ist nur der Nachfolger, ich habe noch kein Prinzip
+                erkennen können.)
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">- Aktuell keine</p>
+            <br />
+
+            <h2>Changelog (Version: 0.1):</h2>
+            <h3 class="question">Features:</h3>
+            <p class="questions_answer">
+                - Darstellung der Gleisbelegung<br />
+                - Anzeige von Verspätungen und Verfrühungen (Züge die zu früh
+                sind)<br />
+                - Dartstellung von mehrfachbelegungen eines Gleises zu einer
+                bestimmten Zeit
+            </p>
+            <h3 class="question">Bekannte Fehler:</h3>
+            <p class="questions_answer">
+                - Bei Aktualisierungen (alle 15 Sekunden) kann es zu Fehlern
+                kommen. Diese bestätigen und auf die nächste Aktualisierung
+                warten (Anzeige rechts oben).<br />
+                - Dartsllungsfehler, siehe letztes Bild
+            </p>
+            <h3 class="question">Planungen:</h3>
+            <p class="questions_answer">
+                - Möglichkeit zum vornehmen einiger Änderungen (z.B.:
+                Update-Interwall, Spaltenbreite, länge der Tablle)
+            </p>
+            <br />
+        </div>
+        <div id="footer">
+            <div class="center">
+                <span>© by Manuel Serret</span>
+                <a href="/impressum.html">Impressum</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)/github.html -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="theme-color" content="#505050" />
+        <title>Plugin: Gleisbelegung</title>
+        <link
+            href="./github_files/style.css"
+            type="text/css"
+            rel="stylesheet"
+        />
+        <script src="chrome-extension://jbkfoedolllekgbhcbcoahefnbanhhlh/content/fido2/page-script.js"></script>
+    </head>
+
+    <body id="website">
+        <div id="header">
+            <div class="center">
+                <a href="/index.html">Home</a>
+                <a href="/github.html">Github</a>
+                <a href="/changelog.html">Changelogs</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="text_align_center">Das Community-Plugin</h1>
+
+            <h3 class="question" id="warum">Warum machst du das?</h3>
+            <p class="questions_answer">
+                Der ein oder andere mag sich vielleicht die Frage stellen, warum
+                ich das Plugin nicht einfach für mich behalte.
+                <del
+                    >Meiner Meinung nach spielen da mehere Aspekte eine Rolle
+                    wovon ich einige gleich mal erläutern werde. Der
+                    bedeutentste Punkt ist, dass ich Anfang nächsten Jahres
+                    (hoffentlich) mein Abi schreiben werde und ich daraus
+                    folgend bedeutent weniger Zeit haben werde. Und ich fände es
+                    nicht gerecht, euch ein 3/4 Jahr ohne Updates zu
+                    lassen.</del
+                >
+                (Mein Abi habe ich mittlerweile geschrieben.) Hinzu kommt
+                vielleicht noch, dass an der Plugin-Schnitstelle während dieser
+                Zeit vielleicht eine Änderung vorgenommen wird und das Plugin
+                dadurch nicht mehr funktioniert, was ich ganuso wie du auch sehr
+                schde fände. Natürlich kann ich nicht vorhersagen, ob sich
+                tatsächlich jemand findet, der sich mit dem Plugin befassen
+                möchte, aber zumindest hast du jetzt die Möglichkeit dazu. Ein
+                anderer Punkt ist, dass ich einfach mal testen möchte ob so ein
+                "Community-Plugin" überhaupt funktioniert bzw. ob jemand
+                Interesse findet in meinem (zugegebener Maßen nicht immer ganz
+                sauberen) Code herumzuspielen. Vielleicht finden hiermit auch
+                ein paar Spieler zusammen, die sonst nicht zusammengefunden
+                hätten. Falls du ein erfahrener Github-Nuzer bist dann lass ich
+                mir auch gerne von dir etwas beibringen. Ich will dich nun aber
+                nicht länger beim weiteren lesen aufhalten und mich jetzt schon
+                mal für deine Mühe bedanken, falls du mitmachen möchtest.
+            </p>
+
+            <h3 class="question">Was brauche ich?</h3>
+            <p class="questions_answer">
+                Zuerst brauchst du einen Rechner/Laptop, aber das ist denke ich
+                verständlich. Für das kompilieren brauchst du vorallem deine CPU
+                und durch die einfachheit des Plugins ist deine Grafikkarte
+                egal. Ich habe eine Intel Dual-Core mit 3.50GHz der 4.
+                Generation und kann den Code in 1-2 Sekunden kompilieren. Auch
+                wenn deine CPU deutlich schlechter ist, kannst du es probieren,
+                vielleicht dauert die Kompilation dann einfach länger.<br />
+                Neben dem Rechner benötigst du einen Github-Account welchen du
+                dir kostenlos auf
+                <a href="http://www.github.com/" class="link" target="_blank"
+                    >www.github.com</a
+                >
+                anlegen kannst. Github ist die Codeverwaltungssoftware, auf
+                welcher auch alle Bugs und Features gesammelt werden. Zusätzlich
+                gibt es dort auch immer noch eine Übersicht, welche dir zeigt,
+                welche Bugs und Features für die nächste Version geplant ist.<br />
+                Zusätzlich brauchst du noch eine Entwicklungsumgebung (z.B.:
+                IntelliJ, Eclippse, Netbeans). Ich habe bis jetzt alles mit
+                IntelliJ programmiert, weshalb dort auch schon alle benötigten
+                Projekt-Dateien vorhanden sind. Ich empfehle dir deshalb
+                IntelliJ zu benutzen, wenn du allerdings eine andere
+                Entwicklungsumgebung benutzen möchtest, dann möchte ich dich
+                davon nicht abhalten. Wenn du IntelliJ benutzen möchtest, musst
+                du dir zunächst
+                <a
+                    href="https://www.jetbrains.com/idea/"
+                    class="link"
+                    target="_blank"
+                    >IntelliJ von der offiziellen Webseite</a
+                >
+                herunterladen und anschließend installieren.
+            </p>
+
+            <h3 class="question">Komm mal zur Sache!</h3>
+            <p class="questions_answer">
+                Es gibt zwei Wege um mir zu helfen, der eine ist einfacher, der
+                andere eher für fortgeschrittene oder Profis. Ich werde dir
+                beide Wege gleich noch genauer erklären, aber hier schon einmal
+                die grobe Zusammenfassug: Beim ersten Weg musst du dir nur die
+                Dateien herunterladen und kannst diese einfach abändern. Hast du
+                eine neue Fuktion programmiert, oder ein Bug behoben, kannst du
+                mir die entsprechende(n) Datei(en) per Email zukommen lassen und
+                ich werde sie dann anschließend hochladen und deinen Namen
+                erwähnen, falls du das möchtest. Beim anderen Weg musst du dich
+                bei Github registrieren, ein zusätzliches Programm installieren,
+                das Repository forken und nach einer Änderung eine Pull Request
+                stellen. Alles fremde Wörter für dich? Kein Problem ich werde
+                dir alles noch erklären.
+            </p>
+
+            <h3 class="question">Mach mal langsam mit den Fachwörtern!</h3>
+            <p class="questions_answer">
+                Ok, dann fange ich mal mit dem 1. Weg an: Du hast dir ja
+                mittlerweile einen Github-Account erstellt und IntelliJ
+                installiert. Damit bist du nun eigentlich schon fertig und
+                kannst schon fast anfangen zu programmieren. Du gehst nun auf
+                mein
+                <a
+                    href="http://github.com/manuel3108/Gleisbelegung"
+                    class="link"
+                    target="_blank"
+                    >Github-Repository</a
+                >
+                und klickst auf den Grünen Button "Clone or download" und wählst
+                dann "Download ZIP". Wenn du die Datei gedownloadet hast, kannst
+                du die darin liegenden Ordner und Dateien an einen dir
+                beliebigen Ort entpacken. Dann öffnest du IntelliJ und wählst
+                unter "File -&gt; Open" den Ordner aus, der auf der gleichen
+                Ebene wie die Readme liegt und wählst dann OK. Nach einer kurzen
+                Wartezeit hat sich das Projekt geöffnet und du kannst dir nun
+                alle Dateien/Klassen anschauen und bearbeiten. Du kannst dir nun
+                in dem meinem Repository alle offenen "Issues" ansehen und dich
+                gerne auch um welche kümmern. Wenn du dann Änderungen
+                vorgenommen hast, kannst du mir die geänderten Dateien gerne per
+                Email senden. Ich werde die Dateien dann hochladen und wenn du
+                möchtest erwähne ich dich auch namentlich im Repository und auch
+                gerne bei einer neuen Ankündigung im Forum.
+            </p>
+
+            <h3 class="question">Alles verstanden - gerne auch kompliziert!</h3>
+            <p class="questions_answer">
+                Du scheinst ja Experte in Github zu sein? Ich will dir noch
+                sagen, dass ich keiner bin und du mir auch gerne Tipps und
+                Hinweise geben kannst. Naja, sobald du auf jeden Fall in Github
+                angemeldet bist und mein
+                <a
+                    href="http://github.com/manuel3108/Gleisbelegung"
+                    class="link"
+                    target="_blank"
+                    >Repository</a
+                >
+                geöffnet hast, kannst du den Fork-Button auf der oberen Rechte
+                Seite betätigen. Dann wird mein Repository in deinen Account
+                geclont. Dann kannst du dir
+                <a
+                    href="https://www.gitkraken.com/"
+                    class="link"
+                    target="_blank"
+                    >Gitkraken</a
+                >
+                herunterladen und installieren. Dieses Programm ermöglicht dir
+                eine grafische Oberfläche für Git. Dort musst du dich dann mit
+                deinem Github Account anmelden und das Repository clonen.
+                Nachdem du das Repository geclont hast, kannst du IntelliJ
+                starten und das Projekt unter "File -&gt; Open" öffnen. Achte
+                darauf, dass du für das Projekt den Ordner "Plugin
+                Gleisbelegung" auf der gleichen Ebene wie die Readme auswählst.
+                Du kannst in dem Projekt nun Änderungen vornehmen oder dich nach
+                einem "Issue" auf meinem Github-Repository richten. Wenn du
+                deine Änderungen vorgenommen hsat, kannst du wieder in Github
+                wechseln. Du klickst danach in der Mtte auf die oberste Zeile
+                und wählst dann in der rechten Spalte "Stage all files".
+                Anschließend musst du noch einen Commit Message angeben, und
+                dann kannst du den unteren grünen Button drücken. Wenn Gitkraken
+                dich benachrichtigt, dass alle Daten hochgeladen sind, kannst du
+                wieder in den Browser wechseln und mein Repository öffnen. Dann
+                klickst du den weißen Button in der Mitte "New Pull Request".
+                Dort wählst du auf der linken Seite dein Repository aus und auf
+                der rechten Seite meins. Dann kannst du noch eine kleine
+                Beschreibung einfügen welche Änderung du vorgenommen hast, bzw.
+                welche "Issues" du behandelst hast, damit ich sie dann auch
+                schließen kann. Nun hast du alles gemacht, was in deinem
+                Aufgabenbereich liegt, um alles ander werde ich mich kümmern.
+            </p>
+
+            <h3 class="question">Was passiert dann?</h3>
+            <p class="questions_answer">
+                Nachdem du mir deine Daten auf eine der beiden Weisen hast
+                zukommen lassen, werde ich einen kurzen Test durchführen, und
+                dir dann möglichst bald eine Rückmeldung geben. Wenn ich etwas
+                zu verbessern habe, werde ich dich auch darüber Benachrichtigen.
+                Wenn du dann die Änderungen vorgenommen hast, und ich nichts
+                mehr zu beanstanden habe, dann werde ich die Dateien in mein
+                Repository übernehmen. Deine Änderungen werden dann im nächsten
+                Update enthalten sein. Wenn du einen "Issue" bearbeitet hast,
+                dann teile mir das bitte ebenfalls mit, damit ich ihn dann
+                schließen kann.
+            </p>
+
+            <h3 class="question" id="issues">Was sind Issues?</h3>
+            <p class="questions_answer">
+                Issues sind Fehler (Bugs) oder Feature-Wünsche die von der
+                Community oder auch von den Entwicklern gewünscht wurden. Diese
+                Issues können von jedem STS-Benutzer erstellt werden, da die
+                Issue erstellung auch ohne Registrierung möglich ist.
+            </p>
+
+            <h3 class="question">Welche Issues soll ich zuerst bearbeiten?</h3>
+            <p class="questions_answer">
+                Das ist eigentlich ganz einfach. Einige Issues werden von mir
+                mit einem Bug-Label versehen. Diese Issues beschreiben Fehler
+                die natürlich möglichst zur nächsten Version behoben werden
+                sollten. Wenn es gerade keine solche bezeichneten Issues gibt,
+                dann gehe unter dem Reiter Issues auf Milestones. Dort gibt es
+                dann mehrere Meilstones (Meilensteine), die die nächsten
+                Versionen darstellen. Sind bei der nächsten Version noch
+                geöffnete Issues dann kannst du auf "Open" klicken. Dort siehst
+                du dann alle Issues, die ich gerne für die nächste Version
+                behoben haben würde. Wen für die geringste Versionsnummer keine
+                geöffneten Issues mehr vorhanden sind, dann wähle einfach die
+                nächste höhere aus und benachrichtige mich, damit ich eine neue
+                Version veröffentlichen kann.
+            </p>
+
+            <h3 class="question">Hast du bis hierhin gelesen?</h3>
+            <p class="questions_answer">
+                Wenn du es bis hierhin geschafft hast, dann kann ich mich auf
+                jeden Fall schon einmal mit der Mühe für das lesen bedanken.
+                Wenn du nebenbei auch noch versucht hast die Schritte
+                mitzumachen und noch Fragen oder Anregungen für diese Seite
+                hast, dann Bedanke ich mir zuerst bei dir und biete dir meine
+                Hilfe per Email oder im STS-Forum an. Wenn du auch noch vor hast
+                ein paar Issoes zu schließen, dann kann ich bzw. die gesamte
+                STS-Community sich gar nicht genug bei dir bedanken.<br />Nach
+                ca. 1350 Wörtern habe ich nun auch mal genug gesagt.
+            </p>
+        </div>
+        <div id="footer">
+            <div class="center">
+                <span>© by Manuel Serret</span>
+                <a href="/impressum.html">Impressum</a>
+            </div>
+        </div>
+    </body>
+</html>
